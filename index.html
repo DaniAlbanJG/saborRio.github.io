@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/video.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-sv4TlyVdeKOv6s1EU1qcpI/v7XqF8LYO8dBPI5NXYn6Y8gh2fD8yT1o8A4A6TCTk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger
+      project-id="riobot2"
+      agent-id="fb4c272f-5155-4ad5-93c2-3d84be5bf751"
+      language-code="en"
+      max-query-length="-1">
+      <df-messenger-chat-bubble
+        chat-title="Riobot">
+      </df-messenger-chat-bubble>
+    </df-messenger>
+    <style>
+      df-messenger {
+        z-index: 999;
+        position: fixed;
+        --df-messenger-font-family: 'Montserrat', sans-serif;
+    --df-messenger-chat-background: #375393; /* Azul oscuro, mismo de tu formulario */
+    --df-messenger-message-user-background: #E8A409; /* Amarillo del container-2 */
+    --df-messenger-message-bot-background: #fff; /* Fondo blanco para el bot */
+    --df-messenger-send-icon: #004572; /* Azul oscuro de tu título */
+    --df-messenger-button-titlebar-color: #004572; /* Título del chat */
+    --df-messenger-button-titlebar-font-color: #FFFEE1;
+        bottom: 16px;
+        right: 16px;
+      }
+    </style>
+
+
+<div class="a">
+    <div class="b">
+        <h3 class="etiqueta">Los mejores sabores</h3>
+    </div>
+</div>
+
+<header>
+    <nav class="navbar">
+        <img class="logo" src="../images/logo.png" width="75" height="63">
+        <div class="navbar-container">
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a id="nav-home" href="index.html" class="navbar-link">Inicio</a></li>
+                <li class="navbar-item"><a id="nav-menu" href="menu.html" class="navbar-link">Menú</a></li>
+                <li class="navbar-item"><a id="nav-nosotros" href="nosotros.html" class="navbar-link">Nosotros</a></li>
+                <li class="navbar-item"><a id="nav-envios" href="envios.html" class="navbar-link">Envíos</a></li>
+                <li class="navbar-item"><a id="nav-ayuda" href="ayuda.html" class="navbar-link">Ayuda/Soporte</a></li>
+            </ul>
+            
+        </div>
+        
+        <a class="social-media" href="https://www.facebook.com/elsaborRio" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+
+    </nav>
+</header>
+    
+    <main>
+        <div class="fondo">
+            <div class="opaco">
+                <div class="icono-Gorro">
+                    <img class="gorro" src="images/gorro.png" alt="logo" width="160px">
+                </div>
+                <h1>El Sabor Riobambeño</h1>
+                <div class="linea"></div>
+                <h3 class="subtitulo">Catering y Eventos</h3>
+                <h2 class="titulo">Restaurante</h2>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="container-1">
+                <div class="container-frase">
+                    <p class="frase">
+                        "Donde hay <br>comida la risa <br>suena mejor"
+                    </p>
+                </div>
+                <h3 class="message-1">Te traemos los mejores sabores de "La Sultana de los Andes"</h3>
+                <p class="text-description">
+                    Hace 7 años nació este negocio con un sueño de
+                    llegar a varias personas del país.
+                    Surgió de la idea de una persona con ideas emprendedoras y 
+                    con el afán de llegar al corazón de sus comensales y quienes
+                    deseen probar el sabor de un buen plato en un lugar
+                    agradable y con buena atención.
+                    <br>
+                    Visítanos para una experiencia inolvidable
+                </p>
+            </div>
+            <div class="container-2">
+                <img class="photo" src="images/FotoPrincipal2.png" alt="Local">
+            </div>
+        </div>
+        <div>
+    
+        <div class="box-container2">
+            <div class="container2-1">
+                <div class="container-form">
+                    <div class="formulario">
+                        <h2 class="text-date">Déjanos tus datos</h2>
+                        <form id="miFormulario">
+                            <input class="input-date" type="text" placeholder="Nombre" maxlength="28" name="nombre">
+                            <input class="input-date" type="email" placeholder="Email" maxlength="28" name="email">
+                            <input class="input-date" type="text" placeholder="Teléfono" maxlength="10" name="telefono">
+                            <input class="input_date submit" type="submit" value="Enviar">
+                        </form>
+                        
+                        <script>
+                            const form = document.getElementById("miFormulario");
+                        
+                            form.addEventListener("submit", function(e) {
+                                e.preventDefault(); // Evita que se recargue la página
+                        
+                                const nombre = form.nombre.value;
+                                const email = form.email.value;
+                                const telefono = form.telefono.value;
+                        
+                                console.log("Nombre:", nombre);
+                                console.log("Email:", email);
+                                console.log("Teléfono:", telefono);
+                                form.reset();
+                        
+                                // Aquí podrías hacer un fetch para enviar los datos a un servidor o API
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="container2-2">
+                <h2 class="title-catering">Catering y Eventos</h2>
+                <h3 class="text-catering">
+                    ¡Haz de tu próximo evento una experiencia inolvidable con nuestros servicios de catering! En El Sabor Riobambeño, llevamos la excelencia culinaria directamente a tu celebración. Ya sea una boda, un cumpleaños, una reunión corporativa o cualquier ocasión especial, nuestro equipo está preparado para ofrecerte una experiencia gastronómica única.
+                    <br><br><br>
+                    Por favor, llena el formulario y te responderemos lo antes posible a tu solicitud.
+                </h3>
+
+            </div>
+        </div>
+        
+        <div class="back-container-video">
+            <div class="contenedor-inf-Video">
+                <div class="text">
+                    <p>Descubre nuestro espacio a través de un recorrido visual, donde cada detalle refleja el cuidado y dedicación que ponemos en cada experiencia gastronómica.</p>
+                </div>
+            </div>
+            <div class="container-video">
+                <video id="miVideo" width="800" muted autoplay preload="auto">
+                    <source id="videoSource" src="images/Video1.mp4" type="video/mp4">
+                </video>
+                
+            </div>
+        </div>
+        
+        <footer class="box-footer">
+            <h4 class="phrase-1">Sabores exquisitos, ubicación perfecta. ¡Encuéntranos aquí!</h4>
+            <div class="map-container">
+                <div class="color-back">
+                    <div class="box-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.14239513109!2d-78.66495422596961!3d-1.6607474361480634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d307f5c8529cff%3A0x7995027225aeea52!2sAvenida%20La%20Prensa%2C%20Riobamba!5e0!3m2!1ses!2sec!4v1717994663480!5m2!1ses!2sec" width="960" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="foot">
+                    <div class="information">
+                        <div class="direccion inf">
+                            <h2>DIRECCIÓN</h4>
+                            <h3>Avenida de la prensa y Olivos</h3>
+                        </div>
+                        <div class="social inf">
+                            <h2>SÍGUENOS</h2>
+                            <a class="social-media-1" href="https://www.facebook.com/elsaborRio" target="_blank"><img src="images/facebookBlanco.png" alt="facebook"></a>
+                        </div>
+                        <div class="contacto inf">
+                            <h2 class="contacto-title">CONTACTO</h4>
+                            <h3>correo@example.com</h3>
+                            <h3>Tel: 0979893749</h3>
+                        </div>
+                    </div>
+                    <div class="horario">
+                        <h3 class="title-horario">Horario de Atención</h3>
+                        <p class="hora">Lunes - Viernes<br>
+                            10am - 4pm<br><br>
+                            Sábado<br>
+                            10am - 5pm<br>
+                        </p>
+    
+                    </div>
+                </div>
+            </div>
+        
+</body>
+</html>

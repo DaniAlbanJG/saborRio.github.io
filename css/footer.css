@@ -1,0 +1,66 @@
+.box-footer{
+    width: 100%;
+    height: 870px;
+    background-color: #333333;
+
+}
+
+.phrase-1{
+    margin:0 auto;
+    padding-top:55px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: Montserrat-Regular;
+    font-size: 22px;
+    color:#DF8989;
+}
+.map-container{
+    height: 350px;
+    background-image: url("../images/mapa.png");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.information{
+    width: 50%;
+    color:#B8B5B5;
+    font-family: Montserrat-Regular;
+    font-size:14px;
+
+}
+.inf{
+    margin-left: 22%;
+    margin-right:22%;
+    padding-top:2%;
+
+}
+.horario{
+    margin-left: 11%;
+}
+
+.foot{
+    display: flex;
+}
+.title-horario{
+    color: #B8B5B5;
+    font-family: Montserrat-Regular;
+    font-size:27px;
+}
+
+.color-back{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color:#0005;
+}
+
+.hora{
+    color:#B8B5B5;
+    font-family: Montserrat-ExtraLight;
+    font-size: 23px;
+    line-height: 34px;
+
+}

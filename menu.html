@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger
+      project-id="riobot2"
+      agent-id="fb4c272f-5155-4ad5-93c2-3d84be5bf751"
+      language-code="en"
+      max-query-length="-1">
+      <df-messenger-chat-bubble
+        chat-title="Riobot">
+      </df-messenger-chat-bubble>
+    </df-messenger>
+    <style>
+      df-messenger {
+        z-index: 999;
+        position: fixed;
+        --df-messenger-font-family: 'Montserrat', sans-serif;
+    --df-messenger-chat-background: #375393; /* Azul oscuro, mismo de tu formulario */
+    --df-messenger-message-user-background: #E8A409; /* Amarillo del container-2 */
+    --df-messenger-message-bot-background: #fff; /* Fondo blanco para el bot */
+    --df-messenger-send-icon: #004572; /* Azul oscuro de tu título */
+    --df-messenger-button-titlebar-color: #004572; /* Título del chat */
+    --df-messenger-button-titlebar-font-color: #FFFEE1;
+        bottom: 16px;
+        right: 16px;
+      }
+    </style>
+    
+    <div class="a">
+        <div class="b">
+            <h3 class="etiqueta">Los mejores sabores</h3>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="../images/logo.png" width="75" height="63">
+            <div class="navbar-container">
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a id="nav-home" href="index.html" class="navbar-link">Inicio</a></li>
+                    <li class="navbar-item"><a id="nav-menu" href="menu.html" class="navbar-link">Menú</a></li>
+                    <li class="navbar-item"><a id="nav-nosotros" href="nosotros.html" class="navbar-link">Nosotros</a></li>
+                    <li class="navbar-item"><a id="nav-envios" href="envios.html" class="navbar-link">Envíos</a></li>
+                    <li class="navbar-item"><a id="nav-ayuda" href="ayuda.html" class="navbar-link">Ayuda/Soporte</a></li>
+                </ul>
+                
+            </div>
+            
+            <a class="social-media" href="https://www.facebook.com/elsaborRio" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+
+        </nav>
+    </header>
+    
+    <div class="principal-container">
+        <h2 class="text-menu">MENÚ</h2>
+        <div class="menu-container">
+            <h2 class="text-title">Los mejores precios</h3>
+            <h3 class="text-subtitle">Elige entre los distintos platos que te ofrecemos</h2>
+            <h2 class="title">Almuerzos</h2>
+            <div class="lunch">
+                <div class="box completo">
+                    <img class="image" src="images/almuerzo.jpeg" alt="Almuerzo completo">
+                    <h3>Almuerzo completo</h3>
+                    <hr>
+                    <h3>$2</h3>
+                </div>
+                <div class="box medio">
+                    <img class="image" src="images/medioAlmuerzo.jpeg" alt="Medio almuerzo">
+                    <h3>Medio Almuerzo</h3>
+                    <hr>
+                    <h3>$1,50</h3>
+                </div>
+                <div class="box segundo">
+                    <img class="image" src="images/segundo.jpeg" alt="Segundo">
+                    <h3>Segundo</h3>
+                    <hr>
+                    <h3>$1,50</h3>
+                </div>
+                <div class="box sopa">
+                    <img class="image" src="images/sopa.jpg" alt="Sopa">
+                    <h3>Sopa</h3>
+                    <hr>
+                    <h3>$1</h3>
+                </div>
+            </div>
+            <h2 class="title">Platos Fuertes</h2>
+            <div class="dishes">
+                <div class="box camarones">
+                    <img class="image" src="images/camarones.jpg" alt="Camarones apanados">
+                    <h3>Camarones Apanados</h3>
+                    <hr>
+                    <h3>$8</h3>
+                </div>
+                <div class="box churrasco">
+                    <img class="image" src="images/churrasco.jpg" alt="Churrasco">
+                    <h3>Churrasco</h3>
+                    <hr>
+                    <h3>$6</h3>
+                </div>
+                <div class="box carne">
+                    <img class="image" src="images/carneApanada.jpg" alt="Carne Apanada">
+                    <h3>Carne Apanada</h3>
+                    <hr>
+                    <h3>$7</h3>
+                </div>
+                <div class="box medio">
+                    <img class="image" src="images/chuleta.jpg" alt="Chuleta con Menestra">
+                    <h3>Chuleta con Menestra</h3>
+                    <hr>
+                    <h3>$6</h3>
+                </div>
+                <div class="box encebollado">
+                    <img class="image" src="images/encebollado.jpg" alt="Encebollado">
+                    <h3>Encebollado</h3>
+                    <hr>
+                    <h3>$2.50</h3>
+                </div>
+            </div>
+            <h2 class="title">Porciones</h2>
+            <div class="portions">
+                
+                <div class="box papas">
+                    <img class="image" src="images/papas.jpeg" alt="Porción de Papas">
+                    <h3>Papas</h3>
+                    <hr>
+                    <h3>$1</h3>
+                </div>
+                <div class="box arroz">
+                    <img class="image" src="images/arroz.avif" alt="Porción de Arroz">
+                    <h3>Arroz</h3>
+                    <hr>
+                    <h3>$1</h3>
+                </div>
+                <div class="box patacones">
+                    <img class="image" src="images/patacones.jpeg" alt="Porción de Patacones">
+                    <h3>Patacones</h3>
+                    <hr>
+                    <h3>$1</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="box-footer">
+        <h4 class="phrase-1">Sabores exquisitos, ubicación perfecta. ¡Encuéntranos aquí!</h4>
+        <div class="map-container">
+            <div class="color-back">
+                <div class="box-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.14239513109!2d-78.66495422596961!3d-1.6607474361480634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d307f5c8529cff%3A0x7995027225aeea52!2sAvenida%20La%20Prensa%2C%20Riobamba!5e0!3m2!1ses!2sec!4v1717994663480!5m2!1ses!2sec" width="960" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="foot">
+                <div class="information">
+                    <div class="direccion inf">
+                        <h2>DIRECCIÓN</h4>
+                        <h3>Avenida de la prensa y Olivos</h3>
+                    </div>
+                    <div class="social inf">
+                        <h2>SÍGUENOS</h2>
+                        <a class="social-media-1" href="https://www.facebook.com/elsaborRio" target="_blank"><img src="images/facebookBlanco.png" alt="facebook"></a>
+                    </div>
+                    <div class="contacto inf">
+                        <h2 class="contacto-title">CONTACTO</h4>
+                        <h3>correo@example.com</h3>
+                        <h3>Tel: 0979893749</h3>
+                    </div>
+                </div>
+                <div class="horario">
+                    <h3 class="title-horario">Horario de Atención</h3>
+                    <p class="hora">Lunes - Viernes<br>
+                        10am - 4pm<br><br>
+                        Sábado<br>
+                        10am - 5pm<br>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+</body>
+</html>

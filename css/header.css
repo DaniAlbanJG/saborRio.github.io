@@ -1,0 +1,80 @@
+body{
+    margin:0;
+}
+.a{
+    margin-top: 0;
+    width: 100;
+    height: 55px;
+    background:linear-gradient(to right,#EDBA43, transparent,#EDBA43 );
+    text-align: center;
+}
+.b{
+    margin:auto;
+    width: 360px;
+    height: 100%;
+    background-color:#E8A409  ;
+    color:#FFF9EC;
+}
+.etiqueta{
+    margin:auto;
+    padding:15px;
+    font-size:21px;
+    font-family: Montserrat-ExtraBoldItalic;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color:#FFFDF9;
+    
+}
+.navbar-container{
+    margin-top:15px;
+    display:flex;
+    align-content: center;
+    width: 890px;
+    height: 60px;
+    border-width: 2px;
+    border-style: solid;
+    border:2px solid #FFF2D8;
+    background-color:#FFF2D8;
+    border-radius: 25px;
+    
+}
+.navbar-menu{
+    display:flex;
+}
+.navbar-item{
+    list-style: none;
+}
+.navbar-link{
+    text-decoration: none;
+    color:#000;
+    font-family: Montserrat-Regular;
+    font-size: 18px;
+    margin-left: 35px;
+    margin-right: 35px;
+    transition: color 0.3s;
+
+}
+.navbar-link.active{
+    color: #E8911B; /* El color que deseas para la página activa */
+    font-family: Montserrat-SemiBold;
+}
+.navbar-link:hover {
+    color: #E8911B ;
+}
+
+.icono-fcb{
+    width: 45px;
+    height: 45px;
+}
+.social-media{
+    margin:28px;
+    margin-left: 75px;
+}
+.logo{
+    margin-top:14px;
+    margin-right: 80px;
+}
